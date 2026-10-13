@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Anh Khang 💙</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: #174778;
+  background: linear-gradient(135deg, #d7efff, #edf8ff, #b8dcff);
+  text-align: center;
+}
+
+.hero {
+  padding: 35px 15px 20px;
+  position: relative;
+}
+
+.tag {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #ffffffc9;
+  border-radius: 30px;
+  color: #1976d2;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 5px 20px #4da5ef25;
+}
+
+h1 {
+  font-size: clamp(35px, 8vw, 65px);
+  margin: 22px 0 10px;
+  color: #1976d2;
+  text-shadow: 3px 4px 0 white, 0 8px 20px #70baff;
+  animation: heartbeat 2s infinite;
+}
+
+.subtitle {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+main {
+  max-width: 760px;
+  padding: 0 16px 35px;
+  margin: auto;
+}
+
+.card {
+  position: relative;
+  background: #ffffffd9;
+  border: 2px solid white;
+  border-radius: 28px;
+  padding: 25px 20px;
+  margin: 22px 0;
+  box-shadow: 0 12px 35px #378ad025;
+}
+
+.cake {
+  font-size: 100px;
+  margin: 15px;
+  animation: bounce 2s infinite;
+  cursor: pointer;
+}
+
+h2 {
+  color: #1976d2;
+}
+
+.wish {
+  font-size: 19px;
+  line-height: 1.9;
+}
+
+.signature {
+  color: #1976d2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+button {
+  border: 0;
+  border-radius: 30px;
+  padding: 14px 22px;
+  margin: 7px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  background: linear-gradient(135deg, #58b5ff, #1976d2);
+  box-shadow: 0 6px 15px #1976d23c;
+  transition: transform .2s;
+}
+
+button:hover {
+  transform: translateY(-3px) scale(1.04);
+}
+
+.gift {
+  font-size: 90px;
+  cursor: pointer;
+  display: inline-block;
+  transition: transform .3s;
+  animation: bounce 2s infinite;
+}
+
+.gift:hover {
+  transform: rotate(-10deg) scale(1.1);
+}
+
+#surprise {
+  display: none;
+  margin-top: 20px;
+  animation: appear .8s ease;
+}
+
+#surprise p {
+  line-height: 1.9;
+  font-size: 19px;
+}
+
+.floating {
+  position: fixed;
+  bottom: -60px;
+  z-index: 5;
+  pointer-events: none;
+  animation: floatUp linear forwards;
+}
+
+main, .hero, footer {
+  position: relative;
+  z-index: 1;
+}
+
+footer {
+  padding: 25px 12px;
+  color: #286ba7;
+  line-height: 1.8;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.045); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+@keyframes floatUp {
+  to {
+    transform: translateY(-120vh) rotate(35deg);
+    opacity: 0;
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: scale(.75);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding-top: 25px;
+  }
+
+  .card {
+    padding: 22px 15px;
+  }
+
+  .wish {
+    font-size: 17px;
+  }
+
+  button {
+    max-width: 100%;
+  }
+
+  .cake {
+    font-size: 85px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="hero">
+  <div class="tag">💙 A SPECIAL DAY 💙</div>
+
+  <h1>Happy Birthday<br>Anh Khang!</h1>
+
+  <p class="subtitle">
+    Hôm nay là ngày đặc biệt của anh! 🎂<br>
+    Chúc anh có một ngày sinh nhật thật đáng nhớ!
+  </p>
+</header>
+
+<main>
+
+  <section class="card">
+    <div class="cake" onclick="party()">🎂</div>
+
+    <h2>🎉 Chúc Mừng Sinh Nhật Anh Khang 🎉</h2>
+
+    <p class="wish">
+      Chúc anh luôn vui vẻ, hạnh phúc<br>
+      và mọi ước mơ đều thành hiện thực! 💙<br>
+
+      <span style="color:#1976d2">
+        Chúc anh tuổi mới thật nhiều sức khỏe,<br>
+        may mắn, thành công và luôn gặp điều tốt đẹp.<br>
+        Mong anh lúc nào cũng vui vẻ và cười thật tươi nhé!
+      </span>
+    </p>
+
+    <p class="signature">
+      — Em Hiếu chúc anh vui vẻ 💙 —
+    </p>
+  </section>
+
+  <section class="card">
+    <h2>🎁 Món quà dành cho anh Khang</h2>
+
+    <p>
+      Em có một món quà bí mật dành tặng anh.<br>
+      Nhấn vào hộp quà để mở nhé!
+    </p>
+
+    <div class="gift" onclick="openGift()">🎁</div>
+
+    <div id="surprise">
+      <h2>💙 SURPRISE! 💙</h2>
+
+      <div style="font-size:65px">🧸💎🎉</div>
+
+      <p>
+        Anh Khang ơi! 🎂<br>
+        Chúc anh luôn mạnh khỏe, vui vẻ và hạnh phúc.<br>
+        Công việc, học tập và mọi dự định đều thuận lợi.<br>
+        Mong anh luôn tự tin, thành công và đạt được
+        những điều mình mong muốn! 💙<br>
+        Cảm ơn anh vì đã là một người anh tuyệt vời!
+      </p>
+
+      <div style="font-size:35px">💙 🩵 💙</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>✨ Bữa tiệc dành riêng cho anh ✨</h2>
+
+    <p>
+      Chọn một nút bên dưới để bắt đầu bữa tiệc sinh nhật!
+    </p>
+
+    <button onclick="party()">
+      🎆 Bắn pháo hoa
+    </button>
+
+    <button onclick="heartRain()">
+      💙 Mưa trái tim
+    </button>
+  </section>
+
+</main>
+
+<footer>
+  Made with 💙 by Em Hiếu dành tặng Anh Khang<br>
+  <strong>Chúc anh sinh nhật vui vẻ! 🎂</strong><br>
+  <small>Luôn mạnh khỏe, hạnh phúc và thành công! 🩵</small>
+</footer>
+
+<script>
+function openGift() {
+  const box = document.getElementById("surprise");
+
+  box.style.display = "block";
+
+  document.querySelector(".gift").textContent = "💝";
+
+  party();
+
+  box.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
+}
+
+function createEffect(symbols, count) {
+  for (let i = 0; i < count; i++) {
+    const el = document.createElement("div");
+
+    el.className = "floating";
+
+    el.textContent =
+      symbols[Math.floor(Math.random() * symbols.length)];
+
+    el.style.left = Math.random() * 100 + "vw";
+
+    el.style.fontSize =
+      (18 + Math.random() * 25) + "px";
+
+    el.style.animationDuration =
+      (2.5 + Math.random() * 2.5) + "s";
+
+    document.body.appendChild(el);
+
+    setTimeout(function() {
+      el.remove();
+    }, 5200);
+  }
+}
+
+function party() {
+  createEffect(
+    ["🎆", "✨", "🎉", "⭐", "💙", "🩵", "🎊"],
+    55
+  );
+}
+
+function heartRain() {
+  createEffect(
+    ["💙", "🩵", "💎", "✨", "🌸", "💖"],
+    45
+  );
+}
+
+// Trái tim xanh bay lên liên tục
+setInterval(function() {
+  const heart = document.createElement("div");
+
+  heart.className = "floating";
+
+  heart.textContent =
+    ["💙", "🩵", "♡", "💎"][
+      Math.floor(Math.random() * 4)
+    ];
+
+  heart.style.left = Math.random() * 100 + "vw";
+
+  heart.style.fontSize =
+    (18 + Math.random() * 15) + "px";
+
+  heart.style.animationDuration =
+    (6 + Math.random() * 4) + "s";
+
+  document.body.appendChild(heart);
+
+  setTimeout(function() {
+    heart.remove();
+  }, 10500);
+}, 900);
+</script>
+
+</body>
+</html>
